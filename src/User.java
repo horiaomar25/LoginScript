@@ -1,5 +1,7 @@
 public class User {
     // Attributes to hold usernames and passwords
+    // Do not want to change the usernames and passwords set - made use of final
+    // Security to keep them as private
     private final String userName;
     private final String password;
 
@@ -9,12 +11,12 @@ public class User {
         this.password = password;
     }
 
-    // Getters
+    // Getter method to access usernames in the Main Class
     public String getUserName() {
         return userName;
     }
 
-    //Getters
+    // Getter method to access usernames in the Main Class
     public String getPassword() {
         return password;
     }
