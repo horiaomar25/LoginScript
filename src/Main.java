@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+/* TODO
+ *   What I want to work on:
+ *   - Trying to split the code up into different methods so it is easier to read.
+ * */
 public class Main {
     public static void main(String[] args) {
 
@@ -29,14 +33,13 @@ public class Main {
                 System.out.println("Welcome to the Login Script");
 
 
-
                 // Validation - makes sure that username is entered. Will keep looping to makes sure that User types something.
 
                 while (inputUserName.isEmpty()) {
                     System.out.println("Please enter your username: ");
                     inputUserName = scanner.nextLine().trim(); // Spaces cannot be entered. Will still request username.
 
-                    if(inputUserName.isEmpty()) {
+                    if (inputUserName.isEmpty()) {
                         System.out.println("You are required to enter a username");
                     }
                 }
@@ -63,7 +66,6 @@ public class Main {
                             break;
                         }
                     }
-
 
 
                 }
